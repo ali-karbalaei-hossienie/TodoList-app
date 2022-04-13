@@ -1,0 +1,24 @@
+.sectionStyle {
+  width: 400px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.date {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.timer {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .sectionStyle {
+    width: 100%;
+  }
+}
