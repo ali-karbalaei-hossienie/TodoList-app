@@ -1,49 +1,51 @@
 .TodoMain {
-  min-height: 500px;
-  max-width: 120rem;
+  height: 24rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: rgba(229, 231, 235);
+  background-color: rgba(229, 231, 235, 1);
   padding: 20px 10px;
+  overflow: auto;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 form {
   position: relative;
   display: flex;
   justify-content: space-between;
+  /* border-color: rgba(209, 213, 219, 1); */
 }
 
 input {
   width: 100%;
-  border: none;
-  background-color: rgba(229, 231, 235);
-  border: none;
   outline: none;
-  border-bottom: 2px solid #ccc;
+  border: none;
   padding: 10px 5px;
   transition: all 0.5s ease-in-out;
+  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+  border-bottom: 2px solid rgba(209, 213, 219, 1);
 }
 
 input:focus {
-  border-bottom: 2px solid rgb(237, 82, 82);
+  border-bottom: 2px solid #e6007e;
 }
 
 input::placeholder {
   font-size: 13px;
 }
 
-.icon {
+.submit {
   position: absolute;
   top: 10px;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   left: 1px;
   cursor: pointer;
   transition: all 0.2s ease-out;
+  color: rgba(156, 163, 175, 1);
 }
 
-.icon:hover {
-  color: rgb(237, 82, 82);
+.submit:hover {
+  color: #e6007e;
 }
-
-

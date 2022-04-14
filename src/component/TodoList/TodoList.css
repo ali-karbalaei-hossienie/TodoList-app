@@ -35,14 +35,15 @@
   background: none;
   border: none;
   transition: all 0.2s ease-in-out;
+  color: rgba(156, 163, 175, 1);
 }
 
 .btn:hover {
-  color: rgb(237, 82, 82);
+  color: #e6007e;
 }
 
 .complete {
-  color: rgb(237, 82, 82);
+  color: #e6007e;
   text-decoration: line-through;
 }
 
@@ -50,5 +51,5 @@
   height: 15px;
   width: 15px;
   margin-left: 10px;
-  accent-color: rgb(237, 82, 82);
+  accent-color: #e6007e;
 }

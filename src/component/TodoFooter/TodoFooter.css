@@ -1,8 +1,15 @@
 .footer {
-  background-color: rgba(75, 85, 99, 0.2);
   display: flex;
   justify-content: space-between;
-  padding: 10px 15px;
-  border-top: 2px solid #ccc;
-  border-bottom: 2px solid #ccc;
+  width: 100%;
+  color: #4b5563;
+  padding: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  height: 3rem;
+  white-space: nowrap;
+  border-top: 1px solid rgba(156, 163, 175);
+  background-color: rgba(209, 213, 219, 1);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }

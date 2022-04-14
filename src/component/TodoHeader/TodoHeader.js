@@ -8,10 +8,10 @@ const TodoHeader = (hour) => {
   const date = new Date();
 
   const getBckground = (hour) => {
-    if (hour >= 6 && hour < 16) {
+    if (hour >= 6 && hour < 18) {
       // Day time - 06:00 to 16:00
-      return { backgroundImage: `url(${day})` };
-    } else if (hour >= 16 && hour < 20) {
+      return { backgroundImage: `url(${afternoon})` };
+    } else if (hour >= 18 && hour < 20) {
       // Afternoon - 16:00 to 20:00
       return { backgroundImage: `url(${afternoon})` };
     } else if (hour >= 20 || hour <= 5) {
@@ -25,5 +25,4 @@ const TodoHeader = (hour) => {
     </section>
   );
 };
-
 export default TodoHeader;
