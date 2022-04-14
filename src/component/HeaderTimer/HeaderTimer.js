@@ -16,7 +16,7 @@ const HeaderTimer = () => {
         setMin((min = 0));
         setHour((hour += 1));
       }
-    }, 100);
+    }, 1000);
   }, []);
 
   ////Timer
