@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component, useState, useEffect } from "react";
 import TodoFooter from "../TodoFooter/TodoFooter";
 import TodoHeader from "../TodoHeader/TodoHeader";
 import TodoMain from "../TodoMain/TodoMain";
@@ -14,6 +14,17 @@ const TodoApp = () => {
     };
     setTodos([...Todos, newTodo]);
   };
+
+  useEffect(() => {
+    let saveTodos = JSON.parse(localStorage.getItem("Todos"));
+    if (saveTodos && saveTodos.length !== 0) {
+      setTodos(saveTodos);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("Todos", JSON.stringify(Todos));
+  }, [Todos]);
 
   const DeleteHandler = (id) => {
     const filterTodos = Todos.filter((Todo) => Todo.id !== id);

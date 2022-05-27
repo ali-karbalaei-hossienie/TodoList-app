@@ -1,10 +1,12 @@
 .footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   color: #4b5563;
   padding: 1rem;
-  font-size: 0.875rem;
+  font-size: 1.2rem;
+  font-weight: 500;
   line-height: 1.25rem;
   height: 3rem;
   white-space: nowrap;

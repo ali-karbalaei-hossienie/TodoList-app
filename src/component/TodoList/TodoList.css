@@ -9,8 +9,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 15px;
-  margin-top: 25px;
+  font-size: 18px;
+  margin-top: 18px;
   border-bottom: 2px solid #ccc;
   padding: 10px 5px;
 }
@@ -28,6 +28,8 @@
 
 .Icon {
   cursor: pointer;
+  width: 18px;
+  height: 18px;
 }
 
 .btn {

@@ -20,10 +20,17 @@ const TodoList = ({ Todos, onDelete, onComplete }) => {
                 type="checkbox"
                 checked={todo.isComplete}
                 onChange={() => handlerChange(todo.id)}
+                id={todo.id}
               />
-              <div className={`${todo.isComplete && "complete"}`}>
+              <label
+                htmlFor={todo.id}
+                className={`${todo.isComplete && "complete"}`}
+              >
                 {todo.text}
-              </div>
+              </label>
+              {/* <div className={`${todo.isComplete && "complete"}`}>
+                {todo.text}
+              </div> */}
             </div>
             <button onClick={() => onDelete(todo.id)} className="btn">
               <FontAwesomeIcon

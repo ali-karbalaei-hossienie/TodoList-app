@@ -1,20 +1,16 @@
-/* .container {
-  max-width: 120rem;
-  margin: 0 auto;
-} */
-
 .container {
-  max-width: 25rem;
+  max-width: 35rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  height: 100vh;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .container {
     margin-top: 40px;
   }
-}
+} */
